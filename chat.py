@@ -1,7 +1,9 @@
 import colorama, json
 from python_twitch_irc import TwitchIrc
+from websocket import create_connection
 
 config = {}
+ws_server = create_connection("ws://localhost:4312")
 
 class TwitchPlays(TwitchIrc):
     def on_connect(self):
@@ -10,6 +12,7 @@ class TwitchPlays(TwitchIrc):
 
     def on_message(self, timestamp, tags, channel, user, message):
         print(f"<{colorama.Fore.CYAN}{user}{colorama.Fore.RESET}> {message}")
+        ws_server.send(message)
 
 def main():
     colorama.init()
