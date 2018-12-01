@@ -5,7 +5,7 @@ config = {}
 
 class TwitchPlays(TwitchIrc):
     def on_connect(self):
-        print(f"{colorama.Fore.YELLOW}Connecting to {colorama.Fore.CYAN}{config['channel']}")
+        print(f"{colorama.Fore.YELLOW}Connecting to {colorama.Fore.CYAN}{config['channel']}{colorama.Fore.RESET}")
         self.join(config["channel"])
 
     def on_message(self, timestamp, tags, channel, user, message):
