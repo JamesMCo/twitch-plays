@@ -1,0 +1,5 @@
+{
+    "channel": "CHANNEL_NAME_HERE",
+    "botname": "BOT_NAME_HERE",
+    "oauth":   "OAUTH_TOKEN_WITHOUT_OAUTH:_PREFIX_HERE"
+}
