@@ -1,0 +1,11 @@
+td.game
+{
+    width:  40px;
+    height: 40px;
+}
+
+#next>tbody>tr>td,#hold>tbody>tr>td
+{
+    width:  20px;
+    height: 20px;
+}
