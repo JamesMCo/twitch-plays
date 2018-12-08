@@ -599,7 +599,7 @@ placePiece = (x, y) =>
                     board[y][x]     = "l";
                     board[y][x+1]   = "l";
                     board[y+1][x+1] = "l";
-                    board[y+1][x+2] = "l";
+                    board[y+2][x+1] = "l";
                     break;
                 case "t":
                     board[y][x+1]   = "t";
